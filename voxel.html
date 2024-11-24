@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script type="module" src="script.js"></script>
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/seedrandom/3.0.5/seedrandom.min.js">
+    </script> 
+    
+    <title>VOXEL</title>
+</head>
+<style>
+    .wrap { position: absolute; bottom: 150px; right: 25px; }
+    .wrap .fl {display: flex;}
+    .button{ width: 70px; height: 70px; border: 1px solid red;}
+</style>
+
+<body>
+    <div id = "container"></div>
+    <script>
+        javascript:(function(){var script=document.createElement('script');script.onload=function(){var stats=new Stats();document.body.appendChild(stats.dom);requestAnimationFrame(function loop(){stats.update();requestAnimationFrame(loop)});};script.src='//mrdoob.github.io/stats.js/build/stats.min.js';document.head.appendChild(script);})()
+    </script>
+    <div style="width: 100px; height: 100px; position: fixed; top : 50px;" class="all-view"> ALL VIEW </div>
+    <div style="width: 100px; height: 100px; position: fixed; top : 100px;" class="wire-mode"> WIRE MODE </div>
+    <div style="width: 100px; height: 100px; position: fixed; top : 150px;" class="box-geo"> CHUNK BOX GEO </div>
+    <!--
+    <div class="wrap">
+        <div class="fl">
+            <div class="button">q</div>
+            <div class="button">w</div>
+            <div class="button">e</div>
+        </div>
+        <div class="fl">
+            <div class="button">l</div>
+            <div class="button">-</div>
+            <div class="button">r</div>
+        </div>
+    </div>
+    -->
+
+</body>
+</html>
